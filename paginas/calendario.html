@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M&J Style</title>
+  <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css" integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/calendario.css"/>
+
+
+   </head>
+
+    <body>
+  <header class="sticky-shrinknav-header">
+    <h1 class="sticky-shrinknav-header-title"><img src="img/titul.jpeg" alt="" width="1500px"></h1>
+    <ul class="menu align-center sticky-shrinknav-menu" large-4 medium-8 small-12>
+        <li><a href=""><a href="servicios.html">VOLVER</a></a></li>
+      </ul>
+   </header>
+
+        <div class="root">
+         <div class="calendar" id="calendar">
+
+          </div>
+        </div>
+
+<br>
+<br>
+<br>
+<br>
+      <div class="columns large-6 medium-4 small-6">
+       <div class="card" style:"display:flex">
+          <center>
+         <h4><strong>Horario de atencion</strong></h4>
+         <h5>Lunes a viernes:</h5>
+         <h6>9:00am -- 13:00pm</h6>
+          <h6>16:00pm -- 20:00pm</h6>
+          <h5>Sabados:</h5>
+          <h6>10:00am -- 16:00pm</h6>
+           </center>
+       </div>
+      </div>
+      <div class="columns large-6 medium-4 small-6">
+       <div class="card">
+       <center>
+       <h4><strong>Contacta con Nosotros</strong></h4>
+         <h6>Cel. 3106626798</h6>
+         <h6>Correo: msalguero04@itfip.edu.co</h6>
+          <h6>Direcciòn: 483 Cl. 16 Girardot, Cundinamarca</h6>
+          </center>
+       </div>
+      </div>
+
+
+
+
+
+
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js">  </script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"> </script>
+      <script type="text/javascript" src="js/calendario.js"> </script>
+
+      <script type="text/javascript">
+      let calendar = new Calendar('calendar');
+      calendar.getElement().addEventListener('change', e=> {
+      console.log(calendar.value().format('LLL'));
+      });
+      </script>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+     $(document).foundation();
+    </script>
+
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+    var winTop = $(window).scrollTop();
+    if (winTop >= 30) {
+    } else{
+      $("body").removeClass("sticky-shrinknav-wrapper");
+    }
+  });
+});
+  </script>
+
+  </body>
+</html>
